@@ -1,10 +1,10 @@
-package com.luv2code.spring.boot.crudDemo;
+package com.luv2code.spring.boot.cruddemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CrudDemoApplicationTests {
+class CruddemoApplicationTests {
 
 	@Test
 	void contextLoads() {
