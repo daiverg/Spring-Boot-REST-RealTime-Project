@@ -2,6 +2,7 @@ package com.luv2code.spring.boot.cruddemo.service;
 
 import com.luv2code.spring.boot.cruddemo.dao.EmployeeDAO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 
@@ -16,7 +17,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeDAO employeeDAO;
 
     @Autowired
-    public EmployeeServiceImpl(EmployeeDAO employeeDAO) {
+    public EmployeeServiceImpl(@Qualifier ("employeeDAOJPAImplement") EmployeeDAO employeeDAO) {
         this.employeeDAO = employeeDAO;
     }
 
